@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*-----INDEX-----*/
+/*-----HEADER-----*/
+header{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+header section img{
+    width: 60px;
+    height: 60px;
+    position: sticky;
+    top: 0px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
+    font-weight: 900px;
+    position: sticky;
+    top: 0px;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 10px;
+    position: sticky;
+    top: 0px;
+}
+.fondo{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/fondo.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }   
+/*-----MAIN-----*/
+.hero h1{
+    font-size: 50px;
+    font-weight: 200px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 8px;
+    color: white;
+    text-align: center;
+    margin-top: 450px;
+}
+.hero h2{
+    font-size: 35px;
+    font-weight: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+}
+.inicio h2{
+    font-size: 40px;
+    font-weight: 200px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 8px;
+    color: white;
+    text-align: center;
+    margin-top: 470px;
+}
+.muestras{
+    margin-left: 50px;
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.muestras img{
+    width: 350px;
+    height: 350px;
+    margin: 200px;    
+}
+.muestras p{
+    width: 350px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Rokkitt', serif;
+    color: white;
+    text-align: center;
+    margin: 200px; 
+    margin-top: -200px;
+}
+.informacion h2{
+    font-size: 50px;
+    font-weight: 200px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 8px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+.informacion p{
+    font-size: 25px;
+    font-weight: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.texto h2{
+    font-size: 50px;
+    font-weight: 200px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 8px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+ }
+ .texto p{
+    font-size: 25px;
+    font-weight: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+ }
+.catalogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catalogo div{
+    width: 300px;
+    height: 450px;
+    border: 5px solid rgb(116, 58, 12);
+    text-align: center;
+    display: inline-block;
+    justify-content: space-between;
+    background-color: rgb(248, 199, 134);
+    flex-wrap: wrap;
+}
+ .catalogo div img{
+    width: 300px;
+    height: 300px;
+}
+.catalogo div a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Rokkitt', serif;
+    color: black;
+    text-align: center;
+}
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.videos{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 5px solid rgb(116, 58, 12);
+    width: 560px; 
+    height: 315px;
+    background-color: rgb(248, 199, 134);
+}
+/*-----FOOTER-----*/
+.pie{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    bottom: 0px;
+}
+.pie img{
+    width: 40px;
+    height: 40px;
+}
+.pie h3{
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
+    font-weight: 900px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+/*-----CAMARAS-----*/
+/*-----HEADER-----*/
+.fondoDos{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/pizarron.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }   
+/*-----MAIN-----*/
+.camaras img{
+    width: 300px;
+    height: 300px;
+}
+.camaras{
+    border: 5px solid rgb(116, 58, 12);
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.carrito{
+    text-decoration: none;
+    font-family: 'Rokkitt', serif;
+    border: 5px solid rgb(100, 50, 10);
+    background-color: rgb(248, 199, 134);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.grid-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+/*-----LENTES-----*/
+/*-----HEADER-----*/
+.lentes img{
+    width: 300px;
+    height: 300px;
+}
+.lentes{
+    border: 5px solid rgb(116, 58, 12);
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.grid-layout-tres{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+/*-----LUCES-----*/
+/*-----HEADER-----*/
+.luces img{
+    width: 300px;
+    height: 300px;
+}
+.luces{
+    border: 5px solid rgb(116, 58, 12);
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.grid-layout-dos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+/*-----ACCESORIOS-----*/
+/*-----HEADER-----*/
+.accesorios img{
+    width: 300px;
+    height: 300px;
+}
+.accesorios{
+    border: 5px solid rgb(116, 58, 12);
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.grid-layout-cuatro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/*-----CONTACTO-----*/
+/*-----MAIN-----*/
+.contacto div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/*----MEDIA QUERIES----*/
+@media screen and (max-width:1220px)
