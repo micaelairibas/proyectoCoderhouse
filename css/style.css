@@ -9,29 +9,22 @@
 header{
     display: flex;
     align-items: center;
-    position: sticky;
-    top: 0px;
+    background-color: rgb(248, 199, 134);
 }
 header section img{
-    width: 60px;
-    height: 60px;
-    position: sticky;
-    top: 0px;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
 }
 header nav ul li a{
     text-decoration: none;
     color: black;
     font-family: 'Rokkitt', serif;
-    font-size: 20px;
-    font-weight: 900px;
-    position: sticky;
-    top: 0px;
+    font-size: 22px;
 }
 header nav ul li{
     display: inline-block;
     margin: 10px;
-    position: sticky;
-    top: 0px;
 }
 .fondo{
     height: 100%;
@@ -52,11 +45,11 @@ header nav ul li{
     letter-spacing: 8px;
     color: white;
     text-align: center;
-    margin-top: 450px;
+    margin-top: 400px;
 }
 .hero h2{
     font-size: 35px;
-    font-weight: 50px;
+    font-weight: 10px;
     font-weight: bold;
     font-style: italic;
     font-family: 'Rokkitt', serif;
@@ -65,12 +58,11 @@ header nav ul li{
     text-align: center;
 }
 .inicio h2{
-    font-size: 40px;
-    font-weight: 200px;
+    font-size: 35px;
     font-weight: bold;
     font-style: italic;
     font-family: 'Rokkitt', serif;
-    letter-spacing: 8px;
+    letter-spacing: 2px;
     color: white;
     text-align: center;
     margin-top: 470px;
@@ -85,8 +77,8 @@ header nav ul li{
     flex-wrap: wrap;
 }
 .muestras img{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     margin-left: 250px;    
 }
 .muestras p{
@@ -105,30 +97,8 @@ header nav ul li{
 .animacion-rotacion:hover{
     transform: rotateY(180deg);
 }
-.informacion h2{
-    font-size: 50px;
-    font-weight: 200px;
-    font-weight: bold;
-    font-style: italic;
-    font-family: 'Rokkitt', serif;
-    letter-spacing: 8px;
-    color: white;
-    text-align: center;
-    margin-top: 100px;
-}
-.informacion p{
-    font-size: 25px;
-    font-weight: 50px;
-    font-weight: bold;
-    font-style: italic;
-    font-family: 'Rokkitt', serif;
-    letter-spacing: 5px;
-    color: white;
-    text-align: center;
-    margin-bottom: 100px;
-}
 .texto h2{
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 200px;
     font-weight: bold;
     font-style: italic;
@@ -157,7 +127,7 @@ header nav ul li{
    
  }
 .catalogo div{
-    width: 300px;
+    width: 350px;
     height: 450px;
     border: 5px solid rgb(116, 58, 12);
     margin: 40px;
@@ -171,7 +141,7 @@ header nav ul li{
     transform: scale(1.1);
  }
 .catalogo div img{
-    width: 300px;
+    width: 340px;
     height: 300px;
 }
 .catalogo div a{
@@ -179,45 +149,68 @@ header nav ul li{
     font-size: 25px;
     font-family: 'Rokkitt', serif;
     color: black;
-    margin-top: 50px;
+    text-align: center;
 }
-.contenedor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+.informacion h2{
+    font-size: 35px;
+    font-weight: 200px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 8px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
 }
-.videos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgb(100, 50, 10);
-    background-color:rgb(248, 199, 134);
-    width: 560px; 
-    height: 315px;
-    margin: 10px;
+.informacion p{
+    font-size: 25px;
+    font-weight: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
 }
+.carousel-control-prev{
+    width: 30%;
+    height: 90%;
+}
+.carousel-control-next{
+    width: 30%;
+    height: 90%;
+}
+.carousel-inner{
+    width: 90%;
+    height: 500px;
+    margin-left: 90px;
+}
+.carousel-inner iframe{
+    width: 90%;
+    height: 500px;
+    margin-left: 90px;
+}
+    
 /*-----FOOTER-----*/
 .pie{
-    bottom: 0;
-    position: absolute;
     width: 100%;
     display: flex;
     justify-content: right;
-    position: sticky;
-    bottom: 0px;
+    background-color: rgb(248, 199, 134);
+    margin-top: 4%;
 }
 .pie img{
     width: 40px;
     height: 40px;
+    margin: 10px;
 }
 .pie h3{
     font-family: 'Rokkitt', serif;
     font-size: 20px;
     font-weight: 900px;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
 }
 
 
@@ -233,37 +226,31 @@ header nav ul li{
     background-attachment: fixed;
  }   
 /*-----MAIN-----*/
-.camaras img{
-    width: 300px;
-    height: 300px;
+.card-contenedor{
+    display: flex;
+    justify-content: space-evenly;
 }
-.camaras{
-    border: 5px solid rgb(116, 58, 12);
+.card{
+    background-color: rgba(248, 199, 134, 0.548);
+    border: 5px solid rgba(116, 59, 12, 0.507);
+    display: inline-block;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.card-img-top{
+    width: 250px;
+    height: 250px;
+}
+.card-title{
     font-family: 'Rokkitt', serif;
     font-size: 20px;
-    padding: 20px;
-    text-align: center;
-    transition: 4s;
+    font-weight:bolder;
 }
-.animacion-acercamiento{
-    transition: 4s;
-}
-.animacion-acercamiento:hover{
-    transform: scale(1.1)
-}
-.carrito{
-    text-decoration: none;
+.card-text{
     font-family: 'Rokkitt', serif;
-    border: 5px solid rgb(100, 50, 10);
-    background-color: rgb(248, 199, 134);
-    text-align: center;
-    margin-top: 50px;
+    font-size: 18px;
 }
-.grid-layout{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-}
+
 
 /*-----LENTES-----*/
 /*-----HEADER-----*/
