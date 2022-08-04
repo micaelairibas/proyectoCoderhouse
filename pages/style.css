@@ -172,13 +172,9 @@ header nav ul li{
 
 /*-----FOOTER-----*/
 .pie{
-    bottom: 0;
-    position: absolute;
     width: 100%;
     display: flex;
     justify-content: right;
-    position: sticky;
-    bottom: 0px;
 }
 .pie img{
     width: 40px;
@@ -217,18 +213,3 @@ header nav ul li{
 }
 
 /*----MEDIA QUERIES----*/
-@media screen and (max-width:1400px){
-    .mediaq-1{
-        display: flex;
-        justify-content: center;
-    }
-    .pie{
-        width: 100%;
-    }
-}
-@media screen and (max-width:1400px){
-    .mediaq-1{
-        display: flex;
-        justify-content: center;
-    }
-}
