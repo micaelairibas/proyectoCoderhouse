@@ -24,8 +24,7 @@ header nav ul li a{
     font-family: 'Rokkitt', serif;
     font-size: 20px;
     font-weight: 900px;
-    position: sticky;
-    top: 0px;
+    margin-right: 0px;
 }
 header nav ul li{
     display: inline-block;
@@ -76,17 +75,15 @@ header nav ul li{
     margin-top: 470px;
 }
 .muestras{
-    margin-left: 50px;
     width: 350px;
     height: 350px;
-    display: inline-block;
-    align-content: center;
-    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .muestras img{
     width: 350px;
-    height: 350px;
-    margin: 200px;    
+    height: 350px;  
 }
 .muestras p{
     width: 350px;
@@ -96,8 +93,6 @@ header nav ul li{
     font-family: 'Rokkitt', serif;
     color: white;
     text-align: center;
-    margin: 200px; 
-    margin-top: -200px;
 }
 .informacion h2{
     font-size: 50px;
@@ -213,3 +208,21 @@ header nav ul li{
 }
 
 /*----MEDIA QUERIES----*/
+@media screen and (max-width: 1400px) and (min-width: 1250px){
+
+}
+    
+@media (max-width: 1450px) and (min-width: 1250px){
+    .muestras{
+        display: flex;
+        flex-direction:column;
+        margin-left: 0px;
+    }
+    .muestras img{
+        margin: 0px;
+    }
+    .muestras p{
+        margin: 0px; 
+        margin-top: 0px;
+    }
+}
