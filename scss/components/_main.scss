@@ -1,0 +1,159 @@
+@import "../base/variables";
+
+/*-----INDEX-----*/
+main{
+    .hero{
+        h1{
+            font-size: 50px;
+            font-weight: 200px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: 'Rokkitt', serif;
+            letter-spacing: 8px;
+            color: white;
+            text-align: center;
+            margin-top: 400px;
+        }
+        h2{
+            font-size: 35px;
+            font-weight: 10px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: 'Rokkitt', serif;
+            letter-spacing: 5px;
+            color: white;
+            text-align: center;
+        }
+    }
+    .inicio{
+        h2{
+            font-size: 35px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: 'Rokkitt', serif;
+            letter-spacing: 2px;
+            color: white;
+            text-align: center;
+            margin-top: 470px;
+        }
+    }
+    section{
+        .muestras{
+            margin-left: 100px;
+            width: 350px;
+            height: 350px;
+            display: inline-block;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            img{
+                width: 300px;
+                height: 300px;
+                margin-left: 250px;
+            }    
+            p{
+                width: 350px;
+                height: 50px;
+                text-decoration: none;
+                font-size: 25px;
+                font-family: 'Rokkitt', serif;
+                color: white;
+                text-align: center; 
+                margin-left: 250px; 
+            }
+        }
+    }
+    .texto{
+        h2{
+            font-size: 35px;
+            font-weight: 200px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: 'Rokkitt', serif;
+            letter-spacing: 8px;
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+        }
+        p{
+            font-size: 25px;
+            font-weight: 50px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: 'Rokkitt', serif;
+            letter-spacing: 5px;
+            color: white;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+    }
+    .catalogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        div{
+            width: 350px;
+            height: 450px;
+            border: 5px solid $color-bordes;
+            margin: 40px;
+            text-align: center;
+            display: inline-block;
+            justify-content: space-between;
+            background-color: $color-fondo;
+            img{
+                width: 340px;
+                height: 300px;
+            }
+            a{
+                text-decoration: none;
+                font-size: 25px;
+                font-family: 'Rokkitt', serif;
+                color: black;
+                text-align: center; 
+            }
+        }
+    }
+    .informacion{
+        h2{
+            font-size: 35px;
+            font-weight: 200px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: 'Rokkitt', serif;
+            letter-spacing: 8px;
+            color: white;
+            text-align: center;
+            margin-top: 100px; 
+        }
+        p{
+            font-size: 25px;
+            font-weight: 50px;
+            font-weight: bold;
+            font-style: italic;
+            font-family: 'Rokkitt', serif;
+            letter-spacing: 5px;
+            color: white;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+    }
+    .carrousel.inner{
+        width: 90%;
+        height: 500px;
+        margin-left: 90px;
+    }    
+    .carousel-inner iframe{
+        width: 90%;
+        height: 500px;
+        margin-left: 90px;
+    }
+    .carousel-control-prev{
+        width: 30%;
+        height: 90%;
+    }
+    .carousel-control-next{
+        width: 30%;
+        height: 90%;
+    }
+}

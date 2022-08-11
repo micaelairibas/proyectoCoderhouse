@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*-----INDEX-----*/
+/*-----HEADER-----*/
+header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(248, 199, 134);
+}
+header section img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Rokkitt', serif;
+    font-size: 22px;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 10px;
+}
+.fondo{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/fondo.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }   
+/*-----MAIN-----*/
+.hero h1{
+    font-size: 50px;
+    font-weight: 200px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 8px;
+    color: white;
+    text-align: center;
+    margin-top: 400px;
+}
+.hero h2{
+    font-size: 35px;
+    font-weight: 10px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+}
+.inicio h2{
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+    margin-top: 470px;
+}
+.muestras{
+    margin-left: 100px;
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.muestras img{
+    width: 300px;
+    height: 300px;
+    margin-left: 250px;    
+}
+.muestras p{
+    width: 350px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Rokkitt', serif;
+    color: white;
+    text-align: center; 
+    margin-left: 250px;
+}
+.animacion-rotacion{
+    transition: 2s;
+}
+.animacion-rotacion:hover{
+    transform: rotateY(180deg);
+}
+.texto h2{
+    font-size: 35px;
+    font-weight: 200px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 8px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+ }
+.texto p{
+    font-size: 25px;
+    font-weight: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+ }
+.catalogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+ }
+.catalogo div{
+    width: 350px;
+    height: 450px;
+    border: 5px solid rgb(116, 58, 12);
+    margin: 40px;
+    text-align: center;
+    display: inline-block;
+    justify-content: space-between;
+    background-color: rgb(248, 199, 134);
+    transition: 3s;
+}
+.catalogo div:hover{
+    transform: scale(1.1);
+ }
+.catalogo div img{
+    width: 340px;
+    height: 300px;
+}
+.catalogo div a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Rokkitt', serif;
+    color: black;
+    text-align: center;
+}
+.informacion h2{
+    font-size: 35px;
+    font-weight: 200px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 8px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+.informacion p{
+    font-size: 25px;
+    font-weight: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Rokkitt', serif;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.carousel-control-prev{
+    width: 30%;
+    height: 90%;
+}
+.carousel-control-next{
+    width: 30%;
+    height: 90%;
+}
+.carousel-inner{
+    width: 90%;
+    height: 500px;
+    margin-left: 90px;
+}
+.carousel-inner iframe{
+    width: 90%;
+    height: 500px;
+    margin-left: 90px;
+}
+    
+/*-----FOOTER-----*/
+.pie{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    background-color: rgb(248, 199, 134);
+    margin-top: 4%;
+}
+.pie img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.pie h3{
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
+    font-weight: 900px;
+    text-align: center;
+    margin: 20px;
+}
+
+
+/*-----CAMARAS-----*/
+/*-----HEADER-----*/
+.fondoDos{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/pizarron.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }   
+/*-----MAIN-----*/
+.card-contenedor{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    background-color: rgba(248, 199, 134, 0.548);
+    border: 5px solid rgba(116, 59, 12, 0.507);
+    display: inline-block;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.card-img-top{
+    width: 250px;
+    height: 250px;
+}
+.card-title{
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
+    font-weight:bolder;
+}
+.card-text{
+    font-family: 'Rokkitt', serif;
+    font-size: 18px;
+}
+
+/*-----CONTACTO-----*/
+/*-----MAIN-----*/
+.contacto div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/*----MEDIA QUERIES----*/
+/*----INDEX----*/
+@media screen and (max-width:1720px){
+    .muestras{
+        margin-left: 100px;
+        display: inline-block;
+        align-content: center;
+        justify-content:left;
+    }
+    .muestras img{
+        margin-left: 0px;    
+    }
+    .muestras p{
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:1400px){
+    .muestras{
+        margin-left: 50px;
+        display: inline-block;
+        align-content: center;
+        justify-content:left;
+    }
+    .muestras img{
+        margin-left: 0px;    
+    }
+    .muestras p{
+        margin-left: 0px;
+    }
+    .carousel-inner{
+        width: 90%;
+        height: 400px;
+        margin-left: 70px;
+    }
+    .carousel-inner iframe{
+        width: 90%;
+        height: 400px;
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width:1260px){
+    .muestras{
+        margin-left: 400px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content:center;
+
+    }
+    .muestras img{
+        margin-top: 150px;    
+    }
+    .muestras p{
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .carousel-inner{
+    width: 90%;
+    height: 300px;
+    margin-left: 50px;
+    }
+    .carousel-inner iframe{
+    width: 90%;
+    height: 300px;
+    margin-left: 50px;
+    }
+}
+
+@media screen and (max-width:960px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .muestras{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width:745px){
+    .hero h1{
+        font-size: 40px;
+        margin-top: 200px;
+    }
+    .hero h2{
+        font-size: 25px;
+    }
+    .inicio h2{
+        font-size: 35px;
+        margin-top: 350px;
+    }
+    .muestras{
+        margin-left: 150px;
+    }
+    .carousel-inner{
+        width: 90%;
+        height: 200px;
+        margin-left: 30px;
+        }
+        .carousel-inner iframe{
+        width: 90%;
+        height: 200px;
+        margin-left: 30px;
+        }
+} 
+@media screen and (max-width:635px){
+    .muestras{
+        display:inline-block;
+        flex-direction:column;
+    }
+    .muestras img{
+        width: 200px;
+        height: 200px;
+        margin-top: 15px; 
+        margin-left: 55px;
+    }  
+}
+
+@media screen and (max-width:530px){
+    .hero h1{
+        font-size: 30px;
+        margin-top: 100px;
+    }
+    .hero h2{
+        font-size: 20px;
+    }
+    .inicio h2{
+        font-size: 25px;
+        margin-top: 200px;
+    }
+    .muestras{
+        display:inline-block;
+        flex-direction:column;
+        margin-left: 30px;
+    }
+    .muestras img{
+        margin-top: 15px; 
+    }  
+    .texto h2{
+        font-size: 25px;
+     }
+    .texto p{
+        font-size: 20px;
+     }
+     .informacion h2{
+        font-size: 25px;
+    }
+    .informacion p{
+        font-size: 20px;
+    }
+    .carousel-control-prev{
+        width: 40%;
+        height: 100%;
+    }
+    .carousel-control-next{
+        width: 40%;
+        height: 100%;
+        margin-right: 30px;
+    }
+    .carousel-inner{
+        width: 90%;
+        height: 200px;
+        margin-left: 10px;
+    }
+     .carousel-inner iframe{
+        width: 90%;
+        height: 200px;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:408px){
+    .muestras{
+        display:inline-block;
+        flex-direction:column;
+        margin-left: 0px;
+    }
+    .muestras img{
+        margin-top: 15px; 
+    }  
+    .muestras p{
+        font-size: 20px;
+    }
+}
+
+/*----MEDIA QUERIES----*/
+/*-----CAMARAS-----*/
+@media screen and (max-width:1200px){
+    .card-contenedor{
+        display:inline-flex;
+        justify-content:center;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:1050px){
+    .card-contenedor{
+        margin-left: 300px;
+    }
+}
+@media screen and (max-width:900px){
+    .card-contenedor{
+        margin-left: 150px;
+    }
+}
+@media screen and (max-width:650px){
+    .card-contenedor{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:562px){
+    .card-contenedor{
+        margin-left: 10px;
+    }
+    .card{
+        width: 230px;
+        height: 550px;    
+    }
+    .card-img-top{
+        width: 150px;
+        height: 150px;
+    }
+    .card-title{
+        font-size: 20px;
+    }
+    .card-text{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:485px){
+    .card-contenedor{
+        display:flex;
+        justify-content:left;
+    }
+    .card{
+    width: 50px;
+    height: 500px; 
+    }
+}
+
+
+/*----MEDIA QUERIES----*/
+/*-----LENTES-----*/
+
+
+/*----MEDIA QUERIES----*/
+/*-----LUCES-----*/
+
+
+/*----MEDIA QUERIES----*/
+/*-----ACCESORIOS-----*/

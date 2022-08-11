@@ -1,0 +1,23 @@
+@import "../base/variables";
+
+footer{
+    .pie{
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        background-color: $color-fondo;
+        margin-top: 4%;
+        img{
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+        }
+        h3{
+            font-family: 'Rokkitt', serif;
+            font-size: 20px;
+            font-weight: 900px;
+            text-align: center;
+            margin: 20px;
+        }
+    }
+}
