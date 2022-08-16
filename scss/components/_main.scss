@@ -157,3 +157,33 @@ main{
         height: 90%;
     }
 }
+
+/*-----CAMARAS/LENTES/LUCES/ACCESORIOS-----*/
+main{
+    .card{
+        background-color: $color-fondo;
+        border: 5px solid $color-bordes;
+        display: inline-block;
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+    .card-contenedor{
+        display: flex;
+        justify-content: space-evenly;
+        .card-img-top{
+        width: 250px;
+        height: 250px;
+        }
+        .card-title{
+        font-family: 'Rokkitt', serif;
+        font-size: 20px;
+        font-weight:bolder;
+        }
+        .card-text{
+        font-family: 'Rokkitt', serif;
+        font-size: 18px;
+        }
+    }
+}
+
+

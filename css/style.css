@@ -12,22 +12,44 @@
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
+.fondoDos {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/pizarron.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
 header {
   display: flex;
-  align-items: center;
   background-color: #f8c786; }
-  header section img {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px; }
+  header section {
+    display: flex; }
+    header section img {
+      width: 50px;
+      height: 50px;
+      margin-top: 5px;
+      margin-left: 20px; }
+    header section P {
+      color: black;
+      font-family: 'Rokkitt', serif;
+      font-size: 28px;
+      margin-left: 25px;
+      margin-top: 10px; }
   header nav ul li {
     display: inline-block;
-    margin: 10px; }
+    margin-top: 15px;
+    margin-right: 15px; }
     header nav ul li a {
       text-decoration: none;
       color: black;
       font-family: 'Rokkitt', serif;
       font-size: 22px; }
+  header .carrito {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px; }
 
 /*-----INDEX-----*/
 main .hero h1 {
@@ -169,6 +191,28 @@ main .carousel-control-next {
   width: 30%;
   height: 90%; }
 
+/*-----CAMARAS/LENTES/LUCES/ACCESORIOS-----*/
+main .card {
+  background-color: #f8c786;
+  border: 5px solid #743a0c;
+  display: inline-block;
+  justify-content: space-evenly;
+  margin: 10px; }
+
+main .card-contenedor {
+  display: flex;
+  justify-content: space-evenly; }
+  main .card-contenedor .card-img-top {
+    width: 250px;
+    height: 250px; }
+  main .card-contenedor .card-title {
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
+    font-weight: bolder; }
+  main .card-contenedor .card-text {
+    font-family: 'Rokkitt', serif;
+    font-size: 18px; }
+
 footer .pie {
   width: 100%;
   display: flex;
@@ -185,3 +229,224 @@ footer .pie {
     font-weight: 900px;
     text-align: center;
     margin: 20px; }
+
+/*----INDEX----*/
+@media screen and (max-width: 1720px) {
+  .muestras {
+    margin-left: 100px;
+    display: inline-block;
+    align-content: center;
+    justify-content: left; }
+  .muestras img {
+    margin-left: 0px; }
+  .muestras p {
+    margin-left: 0px; } }
+
+@media screen and (max-width: 1645px) {
+  section .muestras {
+    margin-left: 50px;
+    display: inline-block;
+    align-content: center;
+    justify-content: left; }
+  section .muestras img {
+    margin-left: 0px; }
+  section .muestras p {
+    margin-left: 0px; } }
+
+@media screen and (max-width: 1635px) {
+  header {
+    width: 100%; } }
+
+@media screen and (max-width: 1610px) {
+  header {
+    width: 100%; } }
+
+@media screen and (max-width: 1590px) {
+  header {
+    width: 100%; } }
+
+@media screen and (max-width: 1400px) {
+  .muestras {
+    margin-left: 50px;
+    display: inline-block;
+    align-content: center;
+    justify-content: left; }
+  .muestras img {
+    margin-left: 0px; }
+  .muestras p {
+    margin-left: 0px; }
+  .carousel-inner {
+    width: 90%;
+    height: 400px;
+    margin-left: 70px; }
+  .carousel-inner iframe {
+    width: 90%;
+    height: 400px;
+    margin-left: 70px; } }
+
+@media screen and (max-width: 1260px) {
+  .muestras {
+    margin-left: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center; }
+  .muestras img {
+    margin-top: 150px; }
+  .muestras p {
+    margin-top: 0px; } }
+
+@media screen and (max-width: 1100px) {
+  .carousel-inner {
+    width: 90%;
+    height: 300px;
+    margin-left: 50px; }
+  .carousel-inner iframe {
+    width: 90%;
+    height: 300px;
+    margin-left: 50px; } }
+
+@media screen and (max-width: 960px) {
+  header {
+    display: flex;
+    flex-direction: column; }
+  .muestras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px; } }
+
+@media screen and (max-width: 745px) {
+  .hero h1 {
+    font-size: 40px;
+    margin-top: 200px; }
+  .hero h2 {
+    font-size: 25px; }
+  .inicio h2 {
+    font-size: 35px;
+    margin-top: 350px; }
+  .muestras {
+    margin-left: 150px; }
+  .carousel-inner {
+    width: 90%;
+    height: 200px;
+    margin-left: 30px; }
+  .carousel-inner iframe {
+    width: 90%;
+    height: 200px;
+    margin-left: 30px; } }
+
+@media screen and (max-width: 635px) {
+  .muestras {
+    display: inline-block;
+    flex-direction: column; }
+  .muestras img {
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+    margin-left: 55px; } }
+
+@media screen and (max-width: 530px) {
+  .hero h1 {
+    font-size: 30px;
+    margin-top: 100px; }
+  .hero h2 {
+    font-size: 20px; }
+  .inicio h2 {
+    font-size: 25px;
+    margin-top: 200px; }
+  .muestras {
+    display: inline-block;
+    flex-direction: column;
+    margin-left: 30px; }
+  .muestras img {
+    margin-top: 15px; }
+  .texto h2 {
+    font-size: 25px; }
+  .texto p {
+    font-size: 20px; }
+  .informacion h2 {
+    font-size: 25px; }
+  .informacion p {
+    font-size: 20px; }
+  .carousel-control-prev {
+    width: 40%;
+    height: 100%; }
+  .carousel-control-next {
+    width: 40%;
+    height: 100%;
+    margin-right: 30px; }
+  .carousel-inner {
+    width: 90%;
+    height: 200px;
+    margin-left: 10px; }
+  .carousel-inner iframe {
+    width: 90%;
+    height: 200px;
+    margin-left: 10px; } }
+
+@media screen and (max-width: 408px) {
+  .muestras {
+    display: inline-block;
+    flex-direction: column;
+    margin-left: 0px; }
+  .muestras img {
+    margin-top: 15px; }
+  .muestras p {
+    font-size: 20px; } }
+
+/*-----CAMARAS-----*/
+@media screen and (max-width: 1200px) {
+  .card-contenedor {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px; } }
+
+@media screen and (max-width: 1050px) {
+  .card-contenedor {
+    margin-left: 300px; } }
+
+@media screen and (max-width: 900px) {
+  .card-contenedor {
+    margin-left: 150px; } }
+
+@media screen and (max-width: 650px) {
+  .card-contenedor {
+    margin-left: 50px; } }
+
+@media screen and (max-width: 562px) {
+  .card-contenedor {
+    margin-left: 10px; }
+  .card {
+    width: 230px;
+    height: 550px; }
+  .card-img-top {
+    width: 150px;
+    height: 150px; }
+  .card-title {
+    font-size: 20px; }
+  .card-text {
+    font-size: 18px; } }
+
+@media screen and (max-width: 485px) {
+  .card-contenedor {
+    display: flex;
+    justify-content: left; }
+  .card {
+    width: 50px;
+    height: 500px; } }
+
+/*-----LENTES-----*/
+@media screen and (max-width: 485px) {
+  .card-contenedor {
+    display: flex;
+    justify-content: left; }
+  .card {
+    width: 50px;
+    height: 500px; } }
+
+/*----MEDIA QUERIES----*/
+/*-----LUCES-----*/
+/*----MEDIA QUERIES----*/
+/*-----ACCESORIOS-----*/
