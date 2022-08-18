@@ -23,33 +23,31 @@
 
 header {
   display: flex;
-  background-color: #f8c786; }
-  header section {
-    display: flex; }
-    header section img {
-      width: 50px;
-      height: 50px;
-      margin-top: 5px;
-      margin-left: 20px; }
-    header section P {
-      color: black;
-      font-family: 'Rokkitt', serif;
-      font-size: 28px;
-      margin-left: 25px;
-      margin-top: 10px; }
+  background-image: url(../img/header.png);
+  height: 70px; }
   header nav ul li {
     display: inline-block;
+    margin-top: 12px; }
+    header nav ul li a img {
+      width: 45px;
+      height: 45px;
+      margin-left: 50px; }
+  header P {
+    color: black;
+    font-family: 'Rokkitt', serif;
+    font-size: 28px;
     margin-top: 15px;
-    margin-right: 15px; }
-    header nav ul li a {
-      text-decoration: none;
-      color: black;
-      font-family: 'Rokkitt', serif;
-      font-size: 22px; }
+    margin-left: 20px; }
   header .carrito {
     width: 50px;
     height: 50px;
-    margin-top: 5px; }
+    margin-top: 10px;
+    margin-left: 1500px; }
+
+main .catalogo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /*-----INDEX-----*/
 main .hero h1 {
@@ -88,8 +86,8 @@ main section .muestras {
   width: 350px;
   height: 350px;
   display: inline-block;
-  align-content: center;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap; }
   main section .muestras img {
     width: 300px;
@@ -107,8 +105,8 @@ main section .muestras {
 
 main .texto h2 {
   font-size: 35px;
-  font-weight: 200px;
   font-weight: bold;
+  font-weight: 200px;
   font-style: italic;
   font-family: 'Rokkitt', serif;
   letter-spacing: 8px;
@@ -128,18 +126,16 @@ main .texto p {
   margin-bottom: 100px; }
 
 main .catalogo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap; }
   main .catalogo div {
     width: 350px;
     height: 450px;
     border: 5px solid #743a0c;
     margin: 40px;
-    text-align: center;
     display: inline-block;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
     background-color: #f8c786; }
     main .catalogo div img {
       width: 340px;
@@ -153,8 +149,8 @@ main .catalogo {
 
 main .informacion h2 {
   font-size: 35px;
-  font-weight: 200px;
   font-weight: bold;
+  font-weight: 200px;
   font-style: italic;
   font-family: 'Rokkitt', serif;
   letter-spacing: 8px;
@@ -197,11 +193,13 @@ main .card {
   border: 5px solid #743a0c;
   display: inline-block;
   justify-content: space-evenly;
+  align-items: center;
   margin: 10px; }
 
 main .card-contenedor {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-items: center; }
   main .card-contenedor .card-img-top {
     width: 250px;
     height: 250px; }
@@ -217,236 +215,288 @@ footer .pie {
   width: 100%;
   display: flex;
   justify-content: right;
-  background-color: #f8c786;
+  background-image: url(../img/header.png);
+  height: 60px;
   margin-top: 4%; }
   footer .pie img {
     width: 40px;
     height: 40px;
-    margin: 10px; }
-  footer .pie h3 {
-    font-family: 'Rokkitt', serif;
-    font-size: 20px;
-    font-weight: 900px;
-    text-align: center;
-    margin: 20px; }
+    margin: 10px;
+    margin-top: 15px; }
 
+/*----MEDIAQ----*/
 /*----INDEX----*/
+@media screen and (max-width: 1770px) {
+  header {
+    width: 100%; }
+    header .carrito {
+      margin-left: 1300px; } }
+
 @media screen and (max-width: 1720px) {
-  .muestras {
+  main section .muestras {
     margin-left: 100px;
     display: inline-block;
     align-content: center;
     justify-content: left; }
-  .muestras img {
+  main section .muestras img {
     margin-left: 0px; }
-  .muestras p {
+  main section .muestras p {
     margin-left: 0px; } }
 
-@media screen and (max-width: 1645px) {
-  section .muestras {
-    margin-left: 50px;
-    display: inline-block;
-    align-content: center;
-    justify-content: left; }
-  section .muestras img {
-    margin-left: 0px; }
-  section .muestras p {
-    margin-left: 0px; } }
-
-@media screen and (max-width: 1635px) {
+@media screen and (max-width: 1655px) {
   header {
-    width: 100%; } }
+    width: 100%; }
+    header .carrito {
+      margin-left: 1100px; } }
 
-@media screen and (max-width: 1610px) {
+@media screen and (max-width: 1465px) {
   header {
-    width: 100%; } }
-
-@media screen and (max-width: 1590px) {
-  header {
-    width: 100%; } }
+    width: 100%; }
+    header .carrito {
+      margin-left: 900px; } }
 
 @media screen and (max-width: 1400px) {
-  .muestras {
+  main section .muestras {
     margin-left: 50px;
     display: inline-block;
     align-content: center;
     justify-content: left; }
-  .muestras img {
+  main section .muestras img {
     margin-left: 0px; }
-  .muestras p {
+  main section .muestras p {
     margin-left: 0px; }
-  .carousel-inner {
+  main .carousel-inner {
     width: 90%;
     height: 400px;
     margin-left: 70px; }
-  .carousel-inner iframe {
+  main .carousel-inner iframe {
     width: 90%;
     height: 400px;
     margin-left: 70px; } }
 
 @media screen and (max-width: 1260px) {
-  .muestras {
+  header {
+    width: 100%; }
+    header .carrito {
+      margin-left: 700px; }
+  main section .muestras {
     margin-left: 400px;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center; }
-  .muestras img {
+  main section .muestras img {
     margin-top: 150px; }
-  .muestras p {
+  main section .muestras p {
     margin-top: 0px; } }
 
 @media screen and (max-width: 1100px) {
-  .carousel-inner {
+  header .carrito {
+    margin-left: 500px; }
+  main .carousel-inner {
     width: 90%;
     height: 300px;
     margin-left: 50px; }
-  .carousel-inner iframe {
+  main .carousel-inner iframe {
     width: 90%;
     height: 300px;
     margin-left: 50px; } }
 
 @media screen and (max-width: 960px) {
-  header {
-    display: flex;
-    flex-direction: column; }
-  .muestras {
+  header .carrito {
+    margin-left: 300px; }
+  main section .muestras {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 200px; } }
 
 @media screen and (max-width: 745px) {
-  .hero h1 {
+  main .hero h1 {
     font-size: 40px;
     margin-top: 200px; }
-  .hero h2 {
+  main .hero h2 {
     font-size: 25px; }
-  .inicio h2 {
+  main .inicio {
     font-size: 35px;
     margin-top: 350px; }
-  .muestras {
+  main section .muestras {
     margin-left: 150px; }
-  .carousel-inner {
+  main .carousel-inner {
     width: 90%;
     height: 200px;
     margin-left: 30px; }
-  .carousel-inner iframe {
+  main .carousel-inner iframe {
     width: 90%;
     height: 200px;
     margin-left: 30px; } }
 
+@media screen and (max-width: 700px) {
+  header .carrito {
+    margin-left: 200px; } }
+
 @media screen and (max-width: 635px) {
-  .muestras {
+  main section .muestras {
     display: inline-block;
     flex-direction: column; }
-  .muestras img {
+  main section .muestras img {
     width: 200px;
     height: 200px;
     margin-top: 15px;
     margin-left: 55px; } }
 
+@media screen and (max-width: 565px) {
+  header .carrito {
+    margin-left: 50px; } }
+
 @media screen and (max-width: 530px) {
-  .hero h1 {
+  main .hero h1 {
     font-size: 30px;
     margin-top: 100px; }
-  .hero h2 {
+  main .hero h2 {
     font-size: 20px; }
-  .inicio h2 {
+  main .inicio h2 {
     font-size: 25px;
     margin-top: 200px; }
-  .muestras {
+  main section .muestras {
     display: inline-block;
     flex-direction: column;
     margin-left: 30px; }
-  .muestras img {
+  main section .muestras img {
     margin-top: 15px; }
-  .texto h2 {
+  main .texto h2 {
     font-size: 25px; }
-  .texto p {
+  main .texto p {
     font-size: 20px; }
-  .informacion h2 {
+  main .informacion h2 {
     font-size: 25px; }
-  .informacion p {
+  main .informacion p {
     font-size: 20px; }
-  .carousel-control-prev {
+  main .carousel-control-prev {
     width: 40%;
     height: 100%; }
-  .carousel-control-next {
+  main .carousel-control-next {
     width: 40%;
     height: 100%;
     margin-right: 30px; }
-  .carousel-inner {
+  main .carousel-inner {
     width: 90%;
     height: 200px;
     margin-left: 10px; }
-  .carousel-inner iframe {
+  main .carousel-inner iframe {
     width: 90%;
     height: 200px;
     margin-left: 10px; } }
 
 @media screen and (max-width: 408px) {
-  .muestras {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 210px; }
+    header nav ul li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 0px; }
+      header nav ul li a img {
+        margin-left: 0px; }
+    header p {
+      margin-left: 0px; }
+    header .carrito {
+      margin-left: 260px; }
+  main section .muestras {
     display: inline-block;
     flex-direction: column;
     margin-left: 0px; }
-  .muestras img {
+  main section .muestras img {
     margin-top: 15px; }
-  .muestras p {
+  main section .muestras p {
     font-size: 20px; } }
 
+@media screen and (max-width: 360px) {
+  header {
+    justify-content: left; }
+    header nav ul li {
+      justify-content: left;
+      margin-top: 10px; }
+      header nav ul li a img {
+        margin-left: 0px; }
+    header p {
+      margin-left: 0px; }
+    header .carrito {
+      margin-left: 150px; }
+  main section .muestras {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    flex-direction: column;
+    margin-left: 0px; }
+  main section .muestras img {
+    margin-top: 15px;
+    width: 200px;
+    height: 200px; }
+  main section .muestras p {
+    width: 250px;
+    height: 80px;
+    font-size: 25px; }
+  main .catalogo div {
+    width: 250px;
+    height: 450px; }
+    main .catalogo div img {
+      width: 240px;
+      height: 300px; } }
+
+/*en la mediaq de 360px no logro entender porque se me empieza a romper el header, ya modifique 
+todo pero me sigue pasando*/
 /*-----CAMARAS-----*/
 @media screen and (max-width: 1200px) {
-  .card-contenedor {
+  main .card-contenedor {
     display: inline-flex;
     justify-content: center;
     flex-direction: column;
     margin-left: 50px; } }
 
 @media screen and (max-width: 1050px) {
-  .card-contenedor {
+  main .card-contenedor {
     margin-left: 300px; } }
 
 @media screen and (max-width: 900px) {
-  .card-contenedor {
+  main .card-contenedor {
     margin-left: 150px; } }
 
 @media screen and (max-width: 650px) {
-  .card-contenedor {
+  main .card-contenedor {
     margin-left: 50px; } }
 
 @media screen and (max-width: 562px) {
-  .card-contenedor {
-    margin-left: 10px; }
-  .card {
+  main .card {
     width: 230px;
     height: 550px; }
-  .card-img-top {
+  main .card-contenedor {
+    margin-left: 10px; }
+  main .card-img-top {
     width: 150px;
     height: 150px; }
-  .card-title {
+  main .card-title {
     font-size: 20px; }
-  .card-text {
+  main .card-text {
     font-size: 18px; } }
 
 @media screen and (max-width: 485px) {
-  .card-contenedor {
-    display: flex;
-    justify-content: left; }
-  .card {
+  main .card {
     width: 50px;
-    height: 500px; } }
+    height: 500px; }
+  main .card-contenedor {
+    display: flex;
+    justify-content: left; } }
 
 /*-----LENTES-----*/
 @media screen and (max-width: 485px) {
-  .card-contenedor {
-    display: flex;
-    justify-content: left; }
-  .card {
+  main .card {
     width: 50px;
-    height: 500px; } }
-
-/*----MEDIA QUERIES----*/
-/*-----LUCES-----*/
-/*----MEDIA QUERIES----*/
-/*-----ACCESORIOS-----*/
+    height: 500px; }
+  main .card-contenedor {
+    display: flex;
+    justify-content: left; } }
