@@ -214,10 +214,14 @@
             .muestras{
                     display:inline-block;
                     flex-direction:column;
-                    margin-left: 30px;
+                    margin-left: 40px;
             }
             .muestras img{
                     margin-top: 15px; 
+                    margin-left: 50px;
+            }
+            .muestras p{
+                margin-left: 20px;
             }
         }
         .texto{
@@ -271,6 +275,7 @@
                     flex-direction: column;
                     justify-content: center;
                     margin-top: 0px;
+                    margin-left: 10px;
                     a{
                         img{
                             margin-left: 0px;
@@ -280,7 +285,7 @@
             }
         }
         p{
-            margin-left: 0px;
+            margin-left: 10px;
         }
         .carrito{
            margin-left: 260px;
@@ -291,13 +296,14 @@
             .muestras{
                     display:inline-block;
                     flex-direction:column;
-                    margin-left: 0px;
+                    margin-left: 30px;
             }
             .muestras img{
                     margin-top: 15px; 
             }  
             .muestras p{
                     font-size: 20px;
+                    margin-left: 10px;
             }
         }
     }
@@ -333,17 +339,19 @@
                     height: 250px;
                     display:inline-block;
                     flex-direction:column;
-                    margin-left: 0px;
+                    margin-left: 10px;
             }
             .muestras img{
                     margin-top: 15px; 
                     width: 200px;
                     height: 200px;
+                    margin-left: 50px;
             }  
             .muestras p{
                     width: 250px;
                     height: 80px;
                     font-size: 25px;
+                    margin-left: 20px;
             }
         }
         .catalogo{
@@ -376,69 +384,95 @@ todo pero me sigue pasando*/
 @media screen and (max-width:1050px){
     main{
         .card-contenedor{
-                margin-left: 300px;
+            display:contents;
+            justify-content:center;
         }
     }
 }
-@media screen and (max-width:900px){
+@media screen and (max-width:950px){
     main{
         .card-contenedor{
-                margin-left: 150px;
+            display:flex;
         }
-    }
-}
-@media screen and (max-width:650px){
-    main{
-       .card-contenedor{
-                margin-left: 50px;
-        } 
     }
 }
 @media screen and (max-width:562px){
     main{
          .card{
-                width: 230px;
-                height: 550px;    
+                height: 680px;    
         }
         .card-contenedor{
                 margin-left: 10px;
-        }
-        .card-img-top{
-                width: 150px;
-                height: 150px;
-        }
-        .card-title{
-                font-size: 20px;
-        }
-        .card-text{
-                font-size: 18px;
+                .card-img-top{
+                    width: 180px;
+                    height: 180px;
+                }
         }
     }
 }
 @media screen and (max-width:485px){
     main{
         .card{
-            width: 50px;
-            height: 500px; 
+            height: 680px; 
         }
         .card-contenedor{
-            display:flex;
-            justify-content:left;
+            margin-left: 0px;
+            .card-img-top{
+                width: 130px;
+                height: 130px;
+            }
         }
     } 
 }
 
 
 /*-----LENTES-----*/
-@media screen and (max-width:485px){
+@media screen and (max-width:565px){
     main{
-        .card{
-            width: 50px;
-            height: 500px; 
+        .contenedor-lentes{
+            .card{
+                height: 450px;
+            }
         }
-        .card-contenedor{
-            display:flex;
-            justify-content:left;
+    } 
+}
+
+/*-----LUCES-----*/
+@media screen and (max-width:565px){
+    main{
+        .contenedor-luces{
+            .card{
+                height: 550px;
+            }
         }
-    }
+    } 
+}
+
+/*-----ACCESORIOS-----*/
+@media screen and (max-width:1205px){
+    main{
+        .contenedor-accesorios{
+                .card-contenedor{
+                    display:inline-block;
+                }
+        }
+    } 
+}
+@media screen and (max-width:995px){
+    main{
+        .contenedor-accesorios{
+                .card-contenedor{
+                    display:flex;
+                }
+        }
+    } 
+}
+@media screen and (max-width:565px){
+    main{
+        .contenedor-accesorios{
+            .card{
+                height: 300px;
+            }
+        }
+    } 
 }

@@ -361,9 +361,12 @@ footer .pie {
   main section .muestras {
     display: inline-block;
     flex-direction: column;
-    margin-left: 30px; }
+    margin-left: 40px; }
   main section .muestras img {
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-left: 50px; }
+  main section .muestras p {
+    margin-left: 20px; }
   main .texto h2 {
     font-size: 25px; }
   main .texto p {
@@ -399,21 +402,23 @@ footer .pie {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-top: 0px; }
+      margin-top: 0px;
+      margin-left: 10px; }
       header nav ul li a img {
         margin-left: 0px; }
     header p {
-      margin-left: 0px; }
+      margin-left: 10px; }
     header .carrito {
       margin-left: 260px; }
   main section .muestras {
     display: inline-block;
     flex-direction: column;
-    margin-left: 0px; }
+    margin-left: 30px; }
   main section .muestras img {
     margin-top: 15px; }
   main section .muestras p {
-    font-size: 20px; } }
+    font-size: 20px;
+    margin-left: 10px; } }
 
 @media screen and (max-width: 360px) {
   header {
@@ -432,15 +437,17 @@ footer .pie {
     height: 250px;
     display: inline-block;
     flex-direction: column;
-    margin-left: 0px; }
+    margin-left: 10px; }
   main section .muestras img {
     margin-top: 15px;
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    margin-left: 50px; }
   main section .muestras p {
     width: 250px;
     height: 80px;
-    font-size: 25px; }
+    font-size: 25px;
+    margin-left: 20px; }
   main .catalogo div {
     width: 250px;
     height: 450px; }
@@ -460,43 +467,50 @@ todo pero me sigue pasando*/
 
 @media screen and (max-width: 1050px) {
   main .card-contenedor {
-    margin-left: 300px; } }
+    display: contents;
+    justify-content: center; } }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   main .card-contenedor {
-    margin-left: 150px; } }
-
-@media screen and (max-width: 650px) {
-  main .card-contenedor {
-    margin-left: 50px; } }
+    display: flex; } }
 
 @media screen and (max-width: 562px) {
   main .card {
-    width: 230px;
-    height: 550px; }
+    height: 680px; }
   main .card-contenedor {
     margin-left: 10px; }
-  main .card-img-top {
-    width: 150px;
-    height: 150px; }
-  main .card-title {
-    font-size: 20px; }
-  main .card-text {
-    font-size: 18px; } }
+    main .card-contenedor .card-img-top {
+      width: 180px;
+      height: 180px; } }
 
 @media screen and (max-width: 485px) {
   main .card {
-    width: 50px;
-    height: 500px; }
+    height: 680px; }
   main .card-contenedor {
-    display: flex;
-    justify-content: left; } }
+    margin-left: 0px; }
+    main .card-contenedor .card-img-top {
+      width: 130px;
+      height: 130px; } }
 
 /*-----LENTES-----*/
-@media screen and (max-width: 485px) {
-  main .card {
-    width: 50px;
-    height: 500px; }
-  main .card-contenedor {
-    display: flex;
-    justify-content: left; } }
+@media screen and (max-width: 565px) {
+  main .contenedor-lentes .card {
+    height: 450px; } }
+
+/*-----LUCES-----*/
+@media screen and (max-width: 565px) {
+  main .contenedor-luces .card {
+    height: 550px; } }
+
+/*-----ACCESORIOS-----*/
+@media screen and (max-width: 1205px) {
+  main .contenedor-accesorios .card-contenedor {
+    display: inline-block; } }
+
+@media screen and (max-width: 995px) {
+  main .contenedor-accesorios .card-contenedor {
+    display: flex; } }
+
+@media screen and (max-width: 565px) {
+  main .contenedor-accesorios .card {
+    height: 300px; } }
