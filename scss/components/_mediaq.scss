@@ -1,13 +1,5 @@
 /*----MEDIAQ----*/
 /*----INDEX----*/
-@media screen and (max-width:1770px){
-    header{
-        width: 100%;
-        .carrito{
-            margin-left: 1300px;
-        }
-    }
-} 
 @media screen and (max-width:1720px){
     main{
         section{
@@ -25,23 +17,7 @@
              }
         }
     }
-}
-@media screen and (max-width:1655px){
-    header{
-        width: 100%;
-        .carrito{
-            margin-left: 1100px;
-        }
-    }
-} 
-@media screen and (max-width:1465px){
-     header{
-         width: 100%;
-         .carrito{
-            margin-left: 900px;
-        }
-    }
-}    
+}   
 @media screen and (max-width:1400px){
     main{
         section{
@@ -71,12 +47,6 @@
     }
 }
 @media screen and (max-width:1260px){
-    header{
-        width: 100%;
-        .carrito{
-           margin-left: 700px;
-       }
-   }
    main{
     section{
         .muestras{
@@ -95,12 +65,20 @@
     }
    }
 }
-@media screen and (max-width:1100px){
+@media screen and (max-width:1220px){
     header{
-        .carrito{
-           margin-left: 500px;
-       }
-   }
+        nav{
+            ul{
+                li{
+                    a{
+                    margin-left: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1100px){
    main{
         .carousel-inner{
             width: 90%;
@@ -114,12 +92,26 @@
         }
    }
 }
-@media screen and (max-width:960px){
+@media screen and (max-width:1020px){
     header{
-        .carrito{
-            margin-left: 300px;
+        nav{
+            ul{
+                li{
+                    img{
+                        margin-left: 0px;
+                    }
+                    p{
+                        margin-left: 0px;
+                    }
+                    a{
+                    margin-left: 30px;
+                    }
+                }
+            }
         }
     }
+}
+@media screen and (max-width:960px){
     main{
         section{
              .muestras{
@@ -127,6 +119,25 @@
                     flex-direction: column;
                     justify-content:center;
                     margin-left: 200px;
+            }
+        }
+    }
+}
+@media screen and (max-width:805px){
+    header{
+        nav{
+            ul{
+                li{
+                    img{
+                        margin-left: 0px;
+                    }
+                    p{
+                        margin-left: 0px;
+                    }
+                    a{
+                    margin-left: 10px;
+                    }
+                }
             }
         }
     }
@@ -165,9 +176,32 @@
 } 
 @media screen and (max-width:700px){
     header{
-        .carrito{
-           margin-left: 200px;
-       }
+        background-image:none;
+        background-color: rgba(248, 199, 134, 0.726);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 300px; 
+        nav{
+            ul{
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: 12px;
+                    img{
+                        margin-left: 300px;
+                    }
+                    p{
+                        margin-left: 0px;
+                    }
+                    a{
+                    margin-left: 0px;
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (max-width:635px){
@@ -184,13 +218,6 @@
                     margin-left: 55px;
             }
         }
-    }
-}
-@media screen and (max-width:565px){
-    header{
-        .carrito{
-           margin-left: 50px;
-       }
     }
 }
 @media screen and (max-width:530px){
@@ -263,33 +290,21 @@
 }
 @media screen and (max-width:408px){
     header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        height: 210px; 
         nav{
             ul{
                 li{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    margin-top: 0px;
-                    margin-left: 10px;
+                    img{
+                        margin-left: 150px;
+                    }
+                    p{
+                        margin-left: 0px;
+                    }
                     a{
-                        img{
-                            margin-left: 0px;
-                        }
+                    margin-left: 0px;
                     }
                 }
             }
         }
-        p{
-            margin-left: 10px;
-        }
-        .carrito{
-           margin-left: 260px;
-       }
     }
     main{
         section{
@@ -309,29 +324,6 @@
     }
 }
 @media screen and (max-width:360px){
-    
-    header{
-        justify-content: left;
-        nav{
-            ul{
-                li{
-                    justify-content: left;
-                    margin-top: 10px;
-                    a{
-                        img{
-                            margin-left: 0px;
-                        }
-                    }
-                }
-            }
-        }
-        p{
-            margin-left: 0px;
-        }
-        .carrito{
-           margin-left: 150px;
-       }
-    }
     main{
         section{
             .muestras{
@@ -366,9 +358,6 @@
         }
     }
 }
-/*en la mediaq de 360px no logro entender porque se me empieza a romper el header, ya modifique 
-todo pero me sigue pasando*/
-
 
 /*-----CAMARAS-----*/
 @media screen and (max-width:1200px){

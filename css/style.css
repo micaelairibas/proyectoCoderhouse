@@ -26,23 +26,25 @@ header {
   background-image: url(../img/header.png);
   height: 70px; }
   header nav ul li {
-    display: inline-block;
+    display: flex;
     margin-top: 12px; }
-    header nav ul li a img {
+    header nav ul li img {
       width: 45px;
       height: 45px;
       margin-left: 50px; }
-  header P {
-    color: black;
-    font-family: 'Rokkitt', serif;
-    font-size: 28px;
-    margin-top: 15px;
-    margin-left: 20px; }
-  header .carrito {
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-    margin-left: 1500px; }
+    header nav ul li P {
+      color: black;
+      font-family: 'Rokkitt', serif;
+      font-size: 28px;
+      margin-top: 2px;
+      margin-left: 50px; }
+    header nav ul li a {
+      text-decoration: none;
+      font-size: 20px;
+      font-family: 'Rokkitt', serif;
+      color: black;
+      margin-top: 8px;
+      margin-left: 90px; }
 
 main .catalogo {
   display: flex;
@@ -226,12 +228,6 @@ footer .pie {
 
 /*----MEDIAQ----*/
 /*----INDEX----*/
-@media screen and (max-width: 1770px) {
-  header {
-    width: 100%; }
-    header .carrito {
-      margin-left: 1300px; } }
-
 @media screen and (max-width: 1720px) {
   main section .muestras {
     margin-left: 100px;
@@ -242,18 +238,6 @@ footer .pie {
     margin-left: 0px; }
   main section .muestras p {
     margin-left: 0px; } }
-
-@media screen and (max-width: 1655px) {
-  header {
-    width: 100%; }
-    header .carrito {
-      margin-left: 1100px; } }
-
-@media screen and (max-width: 1465px) {
-  header {
-    width: 100%; }
-    header .carrito {
-      margin-left: 900px; } }
 
 @media screen and (max-width: 1400px) {
   main section .muestras {
@@ -275,10 +259,6 @@ footer .pie {
     margin-left: 70px; } }
 
 @media screen and (max-width: 1260px) {
-  header {
-    width: 100%; }
-    header .carrito {
-      margin-left: 700px; }
   main section .muestras {
     margin-left: 400px;
     display: flex;
@@ -290,9 +270,11 @@ footer .pie {
   main section .muestras p {
     margin-top: 0px; } }
 
+@media screen and (max-width: 1220px) {
+  header nav ul li a {
+    margin-left: 50px; } }
+
 @media screen and (max-width: 1100px) {
-  header .carrito {
-    margin-left: 500px; }
   main .carousel-inner {
     width: 90%;
     height: 300px;
@@ -302,14 +284,28 @@ footer .pie {
     height: 300px;
     margin-left: 50px; } }
 
+@media screen and (max-width: 1020px) {
+  header nav ul li img {
+    margin-left: 0px; }
+  header nav ul li p {
+    margin-left: 0px; }
+  header nav ul li a {
+    margin-left: 30px; } }
+
 @media screen and (max-width: 960px) {
-  header .carrito {
-    margin-left: 300px; }
   main section .muestras {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 200px; } }
+
+@media screen and (max-width: 805px) {
+  header nav ul li img {
+    margin-left: 0px; }
+  header nav ul li p {
+    margin-left: 0px; }
+  header nav ul li a {
+    margin-left: 10px; } }
 
 @media screen and (max-width: 745px) {
   main .hero h1 {
@@ -332,8 +328,25 @@ footer .pie {
     margin-left: 30px; } }
 
 @media screen and (max-width: 700px) {
-  header .carrito {
-    margin-left: 200px; } }
+  header {
+    background-image: none;
+    background-color: rgba(248, 199, 134, 0.726);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 300px; }
+    header nav ul li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 12px; }
+      header nav ul li img {
+        margin-left: 300px; }
+      header nav ul li p {
+        margin-left: 0px; }
+      header nav ul li a {
+        margin-left: 0px; } }
 
 @media screen and (max-width: 635px) {
   main section .muestras {
@@ -344,10 +357,6 @@ footer .pie {
     height: 200px;
     margin-top: 15px;
     margin-left: 55px; } }
-
-@media screen and (max-width: 565px) {
-  header .carrito {
-    margin-left: 50px; } }
 
 @media screen and (max-width: 530px) {
   main .hero h1 {
@@ -392,24 +401,12 @@ footer .pie {
     margin-left: 10px; } }
 
 @media screen and (max-width: 408px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: 210px; }
-    header nav ul li {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-top: 0px;
-      margin-left: 10px; }
-      header nav ul li a img {
-        margin-left: 0px; }
-    header p {
-      margin-left: 10px; }
-    header .carrito {
-      margin-left: 260px; }
+  header nav ul li img {
+    margin-left: 150px; }
+  header nav ul li p {
+    margin-left: 0px; }
+  header nav ul li a {
+    margin-left: 0px; }
   main section .muestras {
     display: inline-block;
     flex-direction: column;
@@ -421,17 +418,6 @@ footer .pie {
     margin-left: 10px; } }
 
 @media screen and (max-width: 360px) {
-  header {
-    justify-content: left; }
-    header nav ul li {
-      justify-content: left;
-      margin-top: 10px; }
-      header nav ul li a img {
-        margin-left: 0px; }
-    header p {
-      margin-left: 0px; }
-    header .carrito {
-      margin-left: 150px; }
   main section .muestras {
     width: 250px;
     height: 250px;
@@ -455,8 +441,6 @@ footer .pie {
       width: 240px;
       height: 300px; } }
 
-/*en la mediaq de 360px no logro entender porque se me empieza a romper el header, ya modifique 
-todo pero me sigue pasando*/
 /*-----CAMARAS-----*/
 @media screen and (max-width: 1200px) {
   main .card-contenedor {
